@@ -1,0 +1,15 @@
+# Latex Temporary Files
+*.aux
+*.dvi
+*.log
+*.pdf
+
+# Bibtex Temporary Files
+*.bbl
+*.blg
+
+# Gnuplot Temporary Files
+data/*.tex
+
+# Vim Temporary Files
+*.swp
