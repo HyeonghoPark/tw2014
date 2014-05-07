@@ -6,6 +6,7 @@ To derive the relationships among the flow elements, I have conducted a series o
 In this section, I presented the obtained results and derivation of the mathematical model.
 
 \subsection{Effect of Potential Difference}
+\label{subsection:voltage}
 
 \begin{figure}[!t]
   \centering
@@ -28,18 +29,15 @@ In this section, I presented the obtained results and derivation of the mathemat
 \end{figure}
 
 Figure \ref{plot:voltage-current}(a) shows the observed relationship between potential difference and intensity of current.
-From the result, I constructed a simple, linear regression model.
 As $R^2$ value of the linear model indicates, the constructed model well describes about 73\% of the data.
-Also, to check whether this model fits into linear model, I performed a studentized residual analysis.
-The analysis is shown in Figure \ref{plot:voltage-current}(b).
+Then, to prove that this model well fit to the data, studentized residual analysis is performed.
+The result of this analysis is shown in Figure \ref{plot:voltage-current}(b).
 The proposed model well fits with the linear model because the studentized residuals show a random distribution centered at zero and most of the points are in range from -2 to 2.
 
 As the linear model implies, the current flowing in a Galvanic circuit is directly proportional to the potential difference applied to the circuit.
 So, this finding would be used in Section \ref{subsection:derivation}.
 
 \subsection{Effect of Wire Length}
-
-Relationship between current intensity and wire length is depicted in Figure \ref{plot:length-current}.
 
 \begin{figure}[!t]
   \centering
@@ -67,7 +65,38 @@ Relationship between current intensity and wire length is depicted in Figure \re
   \label{plot:length-current}
 \end{figure}
 
-\subsection{Effect of Cross-sectional Area of Wire}
+Relationship between current intensity and wire length is depicted in Figure \ref{plot:length-current}(a).
+From Figure \ref{plot:length-current}(a), I made a conjecture that the current intensity and wire length is inversely proportional.
+To prove this to be true, further analysis is performed with the inverse of current intensity and the wire length.
+The corresponding plot is shown in Figure \ref{plot:length-current}(b).
 
-\subsection{Mathematical Modeling of Electric Flow}
+With inverse value of current intensity and wire length, the same approach from Section \ref{subsection:voltage} was used.
+The linear model is shown in \ref{plot:length-current}(b).
+It explains about 72.5\% of the obtained data and showing an apperant linear relationship.
+Studentized residuals are distributed randomly around zero and most of them are in range between -2 and 2.
+
+Figure \ref{plot:length-current} also includes the result from using zero-length wire.
+In this case, this zero-length is made with the direct connection of the two terminal lines of thermocouple.
+An electric flow is also found in such condition and this fact implies that some variable other than length of wire exists in this experiment.
+This variable is not changed throughout the experiment, because the only changed variable is length of wire.
+In that point, this variable can be regarded as a constant, and it can be implied that this constant is from experiment setting.
+I think this constant is related to internal condition within the experiment equipments, especially the thermocouple.
+This is because the thermocouple itself also contains its own wires and these wires are also included in the total path around circuit.
+Also, this constant is included in the proposed linear model.
+
+According to the data shown in \ref{plot:length-current}, the intensity of current flowing through the Galvanic circuit is inversely proportional to the length of wire within the circuit plus some constant caused by experiment setting.
+This finding was applied to further discussion in Section \ref{subsection:derivation} for derivation of mathematical modeling.
+
+\subsection{Effect of Cross-sectional Area of Wire}
+\label{subsection:cross-section-current}
+
+\begin{figure}[!t]
+  \centering
+
+  \includegraphics[width=2.5in]{./data/cross-section-plot}
+
+  \caption{Relationship between cross-sectional area of wire and current. Constructed linear regression model: $y = 3.5415x + 3.3932, R^2 = 0.370$. $y$ denotes current, $x$ denotes cross-sectional area of wire ($mm^2$).}
+  \label{plot:cross-section-current}
+\end{figure}
+
 \label{subsection:derivation}

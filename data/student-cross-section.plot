@@ -1,7 +1,8 @@
-set terminal latex
-set output "student-cross-section-plot.tex"
-set xlabel "Cross-sectional Area"
-set ylabel "\\rotatebox{90}{Residuals}"
+set terminal postscript eps enhanced "Helvetica" 25
+set term postscript eps
+set output "student-cross-section-plot.eps"
+set xlabel "Cross-sectional Area (mm^2)"
+set ylabel "Residuals"
 set autoscale
 set xrange [0:3]
 set yrange [-2.5:3]
