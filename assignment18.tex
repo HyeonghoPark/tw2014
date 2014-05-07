@@ -236,11 +236,11 @@
 
 
 % *** SUBFIGURE PACKAGES ***
-%\ifCLASSOPTIONcompsoc
-%  \usepackage[caption=false,font=normalsize,labelfont=sf,textfont=sf]{subfig}
-%\else
-%  \usepackage[caption=false,font=footnotesize]{subfig}
-%\fi
+\ifCLASSOPTIONcompsoc
+  \usepackage[caption=false,font=normalsize,labelfont=sf,textfont=sf]{subfig}
+\else
+  \usepackage[caption=false,font=footnotesize]{subfig}
+\fi
 % subfig.sty, written by Steven Douglas Cochran, is the modern replacement
 % for subfigure.sty, the latter of which is no longer maintained and is
 % incompatible with some LaTeX packages including fixltx2e. However,
@@ -495,6 +495,7 @@ lorem, ipsum, dolor, sit, amet
 %Subsubsection text here.
 
 \section{Background}
+\label{section:background}
 
 Nam accumsan elementum faucibus. Duis non nulla massa. Duis fringilla quam purus, ac dignissim neque vulputate non. Fusce sit amet urna dignissim, interdum velit vitae, elementum justo. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nam aliquet magna et mattis ultrices. Nunc suscipit, dui vel semper fermentum, lectus lectus vestibulum magna, id faucibus urna sapien in mi. Aliquam consectetur eleifend iaculis. In non placerat nisl. Praesent mi orci, posuere eget ultrices eu, laoreet et urna. Nunc ut arcu suscipit felis ornare porttitor sed nec arcu. Curabitur in sem in neque dictum blandit. Praesent egestas mauris in gravida congue. Praesent nec ullamcorper quam. Aliquam erat volutpat. In at velit porttitor, rhoncus odio nec, commodo velit.
 

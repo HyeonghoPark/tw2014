@@ -2,4 +2,72 @@
 
 \section{Result \& Analysis}
 
-Result starts here\cite{example}
+To derive the relationships among the flow elements, I have conducted a series of experiments.
+In this section, I presented the obtained results and derivation of the mathematical model.
+
+\subsection{Effect of Potential Difference}
+
+\begin{figure}[!t]
+  \centering
+  \begin{subfloat}[][Potential difference-current data and linear regression model: $y = 1.3677x + 0.3404, R^2 = 0.731$. $y$ denotes current, $x$ denotes relative potential difference.]
+    {
+      \includegraphics[width=2.5in]{./data/voltage-plot}
+    }
+  \end{subfloat}
+
+  \hfill
+
+  \begin{subfloat}[][Studentized residuals of linear regression model.]
+    {
+      \includegraphics[width=2.5in]{./data/student-voltage-plot}
+    }
+  \end{subfloat}
+
+  \caption{Relationship between potential difference and intensity of current.}
+  \label{plot:voltage-current}
+\end{figure}
+
+Figure \ref{plot:voltage-current}(a) shows the observed relationship between potential difference and intensity of current.
+From the result, I constructed a simple, linear regression model.
+As $R^2$ value of the linear model indicates, the constructed model well describes about 73\% of the data.
+Also, to check whether this model fits into linear model, I performed a studentized residual analysis.
+The analysis is shown in Figure \ref{plot:voltage-current}(b).
+The proposed model well fits with the linear model because the studentized residuals show a random distribution centered at zero and most of the points are in range from -2 to 2.
+
+As the linear model implies, the current flowing in a Galvanic circuit is directly proportional to the potential difference applied to the circuit.
+So, this finding would be used in Section \ref{subsection:derivation}.
+
+\subsection{Effect of Wire Length}
+
+Relationship between current intensity and wire length is depicted in Figure \ref{plot:length-current}.
+
+\begin{figure}[!t]
+  \centering
+  \begin{subfloat}[][Wire length-current data]
+    {
+      \includegraphics[width=2.5in]{./data/length-plot}
+    }
+  \end{subfloat}
+
+  \begin{subfloat}[][Inverse of wire length-current data and linear regression model: $\frac{1}{y} = 0.0203x + 0.0416, R^2 = 0.725$. $y$ denotes current, $x$ denotes wire length in meters.]
+    {
+      \includegraphics[width=2.5in]{./data/inverse-length-plot}
+    }
+  \end{subfloat}
+
+  \hfill
+
+  \begin{subfloat}[][Studentized residuals of linear regression model.]
+    {
+      \includegraphics[width=2.5in]{./data/student-inverse-length-plot}
+    }
+  \end{subfloat}
+
+  \caption{Relationship between wire length and intensity of current.}
+  \label{plot:length-current}
+\end{figure}
+
+\subsection{Effect of Cross-sectional Area of Wire}
+
+\subsection{Mathematical Modeling of Electric Flow}
+\label{subsection:derivation}

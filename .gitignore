@@ -9,7 +9,7 @@
 *.blg
 
 # Gnuplot Temporary Files
-data/*.tex
+data/*.eps
 
 # Vim Temporary Files
 *.swp
